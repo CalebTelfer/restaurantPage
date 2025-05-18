@@ -1,12 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 #content {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     background-image: url("./bgIMG.jpeg");
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
 }
 
 #content::after {
@@ -14,8 +21,8 @@
     position: absolute;
     background-color: rgb(30, 26, 26);
     width: 100vw;
-    height: 100vh;
-    opacity: .8;
+    height: 90vh;
+    opacity: .45;
     z-index: 1;
 }
 
@@ -24,9 +31,34 @@
     z-index: 2;
 }
 
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(143, 201, 255, 0.85);
+}
+
+nav {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav > button {
+    width: 8rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
 h1 {
     color: white;
     font-size: 6rem;
+    background-color: rgb(150, 147, 240, .85);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 h2 {
