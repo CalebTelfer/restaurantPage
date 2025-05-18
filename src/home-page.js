@@ -1,4 +1,4 @@
-export function loadPage() {
+export function loadHomePage() {
     const h1 = document.createElement("h1");
     h1.style.marginTop = "2rem";
     h1.textContent = "Caleb's Restaurant";
@@ -50,5 +50,17 @@ export function loadPage() {
     homeButton.style.height = "2.5rem";
     homeButton.style.width = "8.5rem";
     homeButton.style.border = "2px white solid";
+
+    const aboutButton = document.getElementById("about");
+    aboutButton.style.backgroundColor = "white";
+    aboutButton.style.height = "2rem";
+    aboutButton.style.width = "8rem";
+    aboutButton.style.border = "none";
+
+    const menuButton = document.getElementById("menu");
+    menuButton.style.backgroundColor = "white";
+    menuButton.style.height = "2rem";
+    menuButton.style.width = "8rem";
+    menuButton.style.border = "none";
 
 }
