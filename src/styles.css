@@ -1,0 +1,40 @@
+#content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./bgIMG.jpeg");
+    justify-content: center;
+    align-items: center;
+}
+
+#content::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(30, 26, 26);
+    width: 100vw;
+    height: 100vh;
+    opacity: .8;
+    z-index: 1;
+}
+
+#content > * {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: white;
+    font-size: 6rem;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
